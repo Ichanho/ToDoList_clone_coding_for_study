@@ -19,7 +19,7 @@ function getTime()
   const minute = Math.floor(time.getMinutes());
   const sec = Math.floor(time.getSeconds());
 
-  clockTitle.innerText=(padNum(hour,2)+"h  "+padNum(minute,2)+"m  "+padNum(sec,2)+"s");
+  clockTitle.innerText=(padNum(hour,2)+":"+padNum(minute,2)+":"+padNum(sec,2));
 }
 getTime();
 
