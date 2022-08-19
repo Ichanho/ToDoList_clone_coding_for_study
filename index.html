@@ -14,23 +14,24 @@
   </head>
   <body>
     <!-- 로그인 -->
-    <form class="userName" action="">
+    <form class="getUserName" action="">
       <span>What is your name ?</span>
-      <input type="text">
+      <input placeholder="Put Your Name Here!!" type="text" required>
     </form>
 
-    <!-- User 확인 -->
-    <div class="hellowUser"></div>
+    <!-- User 확인 및 출력 -->
+    <div class="hidden helloUser" >
+      <span></span>
+      <button class="changeName">ChangeName</button>
+    </div>
 
     <!-- To do 리스트 입력 -->
     <form class="toDoForm" action="">
-      
+      <input placeholder="Put Next ToDo" type="text" required >
     </form>
 
     <!-- To do 리스트 출력 -->
-    <form class="toDoShow" action="">
-
-    </form>
+    <ul class="toDoShow"></ul>
 
     <!-- 시계 -->
     <div class="clock"></div>
@@ -38,7 +39,16 @@
     <!-- 날씨 -->
     <div class="weather"></div>
 
+    <!-- 랜덤 명언 -->
+    <div class="quotes">
+      <span></span>
+      <span></span>
+    </div>
+
     <script src="src/login.js"></script>
+    <script src="src/quotes.js"></script>
+    <script src="src/todo.js"></script>
     <script src="src/watch.js"></script>
+    <script src="src/weather.js"></script>
   </body>
 </html>
