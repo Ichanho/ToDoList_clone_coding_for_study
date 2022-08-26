@@ -13,14 +13,10 @@ function handleToDoDelete(event)
   const li = event.target.parentElement;
   const deleteID = parseInt(event.target.parentNode.id);
 
-  function filteringItem(item){
-    console.log('ID :'+deleteID+'type : '+typeof(deleteID));
-    console.log('--ID :'+item.id+'type : '+typeof(item.id));
-    return item.id !== deleteID}
+  function filteringItem(item){return item.id !== deleteID}
 
   const tempToDos = toDos.filter(filteringItem);
   toDos = tempToDos;
-  console.log(toDos);
   saveToDo();
 
   li.remove();
