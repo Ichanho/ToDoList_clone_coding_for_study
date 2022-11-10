@@ -11,7 +11,7 @@ function onGeoSuccess(postion){
     const city = document.querySelector(".weather span:last-child");
 
     weatherTag.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-    city.innerText = `${data.name}`;
+    city.innerText = `\n${data.name}`;
   })
 }
 

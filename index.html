@@ -14,29 +14,6 @@
   </head>
 
   <body>
-    <!-- 로그인 -->
-    
-    <form class="getUserName" action="">
-      <span>What is your name ?</span>
-      <input placeholder="Put Your Name Here!!" type="text" required>
-    </form>
-
-    <!-- User 확인 및 출력 -->
-    <div class="hidden helloUser" >
-      <span></span>
-      <button class="changeName">ChangeName</button>
-    </div>
-
-    <!-- To do 리스트 입력 -->
-    <form class="toDoForm" action="">
-      <input placeholder="Put Next ToDo" type="text" required >
-    </form>
-
-    <!-- To do 리스트 출력 -->
-    <ul class="toDoShow"></ul>
-
-    <!-- 시계 -->
-    <div class="clock"></div>
 
     <!-- 날씨 -->
     <div class="weather">
@@ -44,16 +21,50 @@
       <span></span>
     </div>
 
+    <div class="mainContainer">
+      <!-- 시계 -->
+      <div class="clock"></div>
+
+      <!-- 로그인 -->
+      <form class="getUserName" action="">
+        <span>What is your name ?</span>
+        </p>
+        <input class="loginInput" placeholder="Put Your Name Here!!" type="text" required>
+      </form>
+
+      <!-- User 확인 및 출력 -->
+      <div class="hidden helloUser" >
+        <span></span>
+        </p> 
+        <button class="changeName">ChangeName</button>
+      </div>
+
+      <!-- To do 리스트 입력 -->
+      <form class="toDoForm hidden" action="">
+        <input placeholder="Put Next ToDo" type="text" required >
+      </form>
+
+      <!-- To do 리스트 출력 -->
+      <ul class="toDoShow"></ul>
+
+      <!-- 날씨 -->
+      <div class="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
     <!-- 랜덤 명언 -->
     <div class="quotes">
       <span></span>
       <span></span>
     </div>
+
     <script src="src/background.js"></script>
     <script src="src/login.js"></script>
     <script src="src/quotes.js"></script>
     <script src="src/todo.js"></script>
-    <script src="src/watch.js"></script>
+    <script src="src/clock.js"></script>
     <script src="src/weather.js"></script>
   </body>
 </html>
