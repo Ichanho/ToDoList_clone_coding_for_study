@@ -10,6 +10,7 @@
 /* Size */
     --topBottom-margin: 10px;
     --side-margin: 20px;
+    --toDo-side-margin: 20%;
     --side-padding: 12px;
     --icon-size: 16px;
     --avator-size: 36px;
@@ -82,10 +83,43 @@ body {
   opacity:0.4;
 }
 
+.toDoInput{
+  text-align: center;
+  width: 250px;
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: var(--blue-color) solid;
+  background-color: rgba( 0,0,0, 0.6);
+  
+  color : var(--grey-light-color); -webkit-text-stroke: 1px var(--black-color); font-weight: bold;
+  font-size: var(--font-medium);
+}
+
+.toDoInput::placeholder{
+  color : var(--grey-light-color); -webkit-text-stroke: 1px var(--black-color); font-weight: bold;
+  font-size: var(--font-small);
+  font-style: italic;
+}
+
 .toDoShow li{
+  margin-right: var(--toDo-side-margin);
+  margin-left: var(--toDo-side-margin);
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
-  border: solid 1px black;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: var(--black-color) solid;
+}
+
+.toDoShow button{
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  border: none;
 }
 
 .quotes{

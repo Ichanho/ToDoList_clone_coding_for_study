@@ -30,7 +30,7 @@ function showToDoList(toDo)
   let newToDoText = document.createElement("span");
   newToDoText.innerText = toDo.text;
   let newToDoDelete = document.createElement("button");
-  newToDoDelete.innerText = "X";
+  newToDoDelete.innerText = "❌";
   newToDoDelete.addEventListener("click",handleToDoDelete);
 
   newToDo.appendChild(newToDoText);
